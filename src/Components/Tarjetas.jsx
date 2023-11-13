@@ -7,7 +7,7 @@ export const Tarjetas = (props) => {
   return (
     <>
     {estado?null:
-    <>{data.Colaboradore.map((item,index) => (
+    <>{data.data.Colaboradore.map((item,index) => (
         <div key={index} className="elemento-card-colaborador">
         <div className="elemento-datos-personales">
           <span>Nombres: {item.nombres}</span>

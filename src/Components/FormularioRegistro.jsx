@@ -50,7 +50,7 @@ const Formulario = () => {
       .then((response) => response.json())
       .then((data) => console.log('Respuesta del servidor:', data))
       .catch((error) => console.error('Error en la petición:', error));
-      window.location.replace(`/RegistroExitoso`)
+      window.location.replace(`/RegistrarUsuario/RegistroExitoso`)
      
   };
 
