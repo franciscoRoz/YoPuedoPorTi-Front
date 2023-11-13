@@ -1,0 +1,97 @@
+.elemento-menu-items {
+    
+    background-color: inherit;
+    width: 100%;
+    text-align: center;
+    
+}
+
+.bloque-navbar {
+    background-color: #01b0d8;
+    width: 100%;
+    color: white;
+    padding: 10px;
+    justify-content: end;
+}
+
+.bloque-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.bloque-navbar li {
+    margin-right: 10px;
+    position: relative;
+    width: 120px;
+}
+
+.bloque-navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Estilos para el menú de hamburguesa */
+.elemento-hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 40px;
+    margin-right: 20px;
+}
+
+/* Estilos para el submenú */
+.bloque-navbar ul ul {
+    display: none;
+    position: absolute;
+    background-color:#01b0d8;
+    padding: 10px;
+    text-align: center;
+    left: 0;
+    top: 100%;
+}
+
+/* Mostrar submenú cuando se hace clic en la opción correspondiente */
+.bloque-navbar li:hover ul {
+    display: block;
+}
+
+/* Estilos para la opción seleccionada */
+.bloque-navbar li span.selected {
+    color: white;
+    /* Cambia el color según tu preferencia */
+}
+
+/* Estilos para los enlaces en el submenú */
+.bloque-navbar li ul li {
+    margin: 10px 0;
+
+}
+
+/* Estilos para el menú en tamaños pequeños (menos de 450px) */
+@media (max-width: 450px) {
+    .elemento-menu-items{position: absolute;
+        right: 0;}
+    .elemento-menu-items.modificador-show {
+        display: none;
+        flex-direction: column;
+        /* Muestra el menú de navegación como una lista vertical */
+    }
+
+    .bloque-navbar ul {
+        flex-direction: column;
+    }
+
+    .bloque-navbar li {
+        margin: 0;
+        padding: 10px;
+    }
+
+    .bloque-navbar li:hover ul {
+        position: static;
+    }
+
+    .elemento-hamburger {
+        display: block;
+    }
+}

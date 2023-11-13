@@ -1,0 +1,11 @@
+.logo-instagram {
+  position: fixed;
+  bottom: 200px; /* Ajusta según tu preferencia */
+  right: 20px; /* Ajusta según tu preferencia */
+  z-index: 1000; /* Asegura que esté por encima del contenido */
+}
+
+.logo-instagram img {
+  width: 60px; /* Ajusta según el tamaño deseado */
+  height: auto; /* Mantiene la proporción del logo */
+}

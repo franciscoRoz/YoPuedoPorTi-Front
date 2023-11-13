@@ -1,0 +1,57 @@
+.bloque-carrucel-ofertas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 320px));
+    gap:2rem
+}
+
+
+.bloque_tarjeta {
+    background-color: #fcfcfc;
+    width: 300px;
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px ridge #b1b1b1;
+}
+
+.bloque-seccion-perfil {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bloque-etiquetas {
+    display: flex;
+    flex-direction: column;
+}
+
+.elemento-modalidad {
+    color: #8f78c3;
+    background-color: #ddccf0;
+    width: 150px;
+    padding: 6px;
+    padding-left: 10px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+.elemento-lugar {
+    margin-top: 15px;
+    color: #426aa8;
+    background-color: #c1d8ea;
+    width: 110px;
+    padding: 6px;
+    padding-left: 10px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+.elemento-salario {
+    margin-top: 15px;
+    color: #426aa8;
+    background-color: #c1d8ea;
+    width: 120px;
+    padding: 6px;
+    padding-left: 10px;
+    border-radius: 20px;
+    font-size: 13px;
+}

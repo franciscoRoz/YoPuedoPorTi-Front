@@ -1,0 +1,7 @@
+.bloque-informacion{
+    padding: 15px;
+   text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(700px,200px));
+    gap: 2rem;
+}

@@ -1,0 +1,74 @@
+.bloque-FormBusqueda{
+    width: 100%;
+    min-height: 70vh;
+    background-color: #01b0d8;
+    display: flex;
+    flex-direction: row;
+    color: black;
+}
+
+.bloque-servicios-disponibles{
+    padding: 15px;
+}
+.bloque-servicios-disponibles>h2{
+    color: #3c3c3c;
+}
+ .bloque-registros{
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+ }
+ .bloque-registros>div{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .bloque-categorias-populares{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+
+ }
+ .bloque-categorias-populares>h2{
+    color: #3c3c3c;
+ }
+
+ .bloque-experencia{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+ }
+ .bloque-experencia>h2{
+    color: #3c3c3c;
+ }
+ .elemento-colaborador{
+   background-image: url("http://res.cloudinary.com/ddlvvek8u/image/upload/v1699880734/una-adecuada-oficina-en-casa-aumenta-la-productividad-del-trabajo-688501.jpg.jpg");
+   background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+   background-position: center center; /* Centra la imagen en el fondo */
+   background-repeat: no-repeat;
+ }
+ .modify-colaborador{
+   padding: 20px;
+   color: white;
+   background-color: #01b0d8;
+   border-radius: 40px;
+   text-decoration: none;
+
+ }
+ .elemento-usuario{
+   background-image: url("http://res.cloudinary.com/ddlvvek8u/image/upload/v1699881188/photo-1563986768609-322da13575f3.avif.avif");
+   background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+   background-position: center center; /* Centra la imagen en el fondo */
+   background-repeat: no-repeat;
+ }
+ .modify-usuario{
+   padding: 20px;
+   color: white;
+   background-color: #01b0d8;
+   border-radius: 40px;
+   text-decoration: none;
+
+ }
+
+ 

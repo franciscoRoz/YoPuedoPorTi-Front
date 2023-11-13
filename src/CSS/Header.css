@@ -1,0 +1,22 @@
+.bloque-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100px;
+    background-color: #01b0d8;
+}
+.elemento-logo-header{
+    width: 17%;
+    padding-left: 10px;
+}
+.elemento-navbar{
+    width: 75%;
+    display: flex;
+    justify-content: start;
+}
+
+@media (max-width: 450px) {
+    .elemento-navbar{
+        justify-content: end;
+    }
+}

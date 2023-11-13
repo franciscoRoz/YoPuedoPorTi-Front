@@ -1,0 +1,26 @@
+.bloque-formulario{
+    padding: 10px;
+}
+input{
+    padding: 5px;
+    font-size: 13px;
+    border-radius: 10px;
+    width: 300px;
+    border: 0.5px ridge #b1b1b1;
+    
+  }
+input:focus {
+    outline: none; /* Elimina el contorno del campo de entrada al enfocarlo */
+    border: 1px ridge #b1b1b1; /* Añade un nuevo borde para mantener la visibilidad del campo enfocado */
+  }
+  .elemento-enviar{
+    width: 150px;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    background-color:#01b0d8;
+    color: white;
+  }
+  .elemento-enviar:hover{
+    background-color:#65cbe2;
+  }

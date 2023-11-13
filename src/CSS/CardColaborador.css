@@ -1,0 +1,41 @@
+.bloque-carrucel{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(700px,200px));
+   gap: 2rem;
+}
+
+
+.elemento-card-colaborador{
+    background-color:#fcfcfc ;
+    
+    padding: 15px;
+    border-radius: 10px;
+    border:1px ridge #b1b1b1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.elemento-datos-personales{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.elemento-datos-personales>span{
+    margin: 10px;
+}
+.elemento-calificacion{
+    display: flex;
+    flex-direction: column;
+}
+.elemento-calificacion>button{
+    margin-top: 50px;
+}
+.elemento-contratar{
+    border: none;
+    background-color: #01b0d8;
+    width: 150px;
+    height: 50px;
+    color: white;
+    border-radius: 20px;
+    font-size: 17px;
+}
