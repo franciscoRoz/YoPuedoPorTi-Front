@@ -43,7 +43,7 @@ const Formulario = () => {
 
     // Aquí puedes realizar la petición con FormData, por ejemplo, utilizando fetch o Axios.
     // Ejemplo con fetch:
-    fetch('https://yopuedoporti.dataecom.cl/Usuarios/Registrar', {
+    fetch('http://34.224.75.245:80/Usuarios/Registrar', {
       method: 'POST',
       body: formData,
     })
@@ -91,14 +91,14 @@ const Formulario = () => {
       <br />
       <br />
       <label>
-        Carnet por el frente
+        Imagen 1
         <br />
         <input type="file" name="imagen1" accept="image/*" onChange={handleImagen1} />
       </label>
       <br />
       <br />
       <label>
-        Carnet por atras
+        Imagen 2
         <br />
         <input type="file" name="imagen2" accept="image/*" onChange={handleImagen2} />
       </label>

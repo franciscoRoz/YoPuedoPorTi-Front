@@ -1,4 +1,5 @@
 
+import { useParams } from "react-router-dom"
 import { CardColaborador } from "../Components/CardColaborador"
 import { Header } from "../Components/Header"
 import InstagramLogo from "../Components/IgLogo"
@@ -6,8 +7,8 @@ import "../CSS/ListadeColaboradores.css"
 import { useFetchColaboradores } from "../Hooks/useFetchColaboradores"
 
 export const ListadeColaboradores = () => {
-  
-  let {data,loading}=useFetchColaboradores()
+  const { Servicio } = useParams();
+  let {data,loading}=useFetchColaboradores(Servicio)
 
   return (
     <div >
