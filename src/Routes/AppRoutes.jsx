@@ -3,6 +3,7 @@ import { HomePage } from '../screen/HomePage'
 import { ListadeColaboradores } from '../screen/ListadeColaboradores'
 import { FormulariodeRegistro } from '../screen/FormulariodeRegistro'
 import { Informacion } from '../screen/Informacion'
+import { RegistroExitoso } from '../screen/RegistroExitoso'
 
 
 
@@ -13,6 +14,7 @@ export const AppRoutes = () => {
         <Route path='/ListaColaboradores/:servicio' element={<ListadeColaboradores/>}/>
         <Route path='/RegistrarUsuario' element={<FormulariodeRegistro/>}/>
         <Route path='/Informacion' element={<Informacion/>}/>
+        <Route path='/RegistrarUsuario/RegistroExitoso' element={<RegistroExitoso/>}/> 
     </Routes>
   )
 }

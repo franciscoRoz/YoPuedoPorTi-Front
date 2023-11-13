@@ -50,6 +50,8 @@ const Formulario = () => {
       .then((response) => response.json())
       .then((data) => console.log('Respuesta del servidor:', data))
       .catch((error) => console.error('Error en la petición:', error));
+      window.location.replace(`/RegistroExitoso`)
+     
   };
 
   return (
@@ -105,7 +107,7 @@ const Formulario = () => {
       <br />
       <br />
       <br />
-      <button type="submit" className='elemento-enviar'>Enviar</button>
+      <button type="submit" className='elemento-enviar' >Enviar</button>
     </form>
   );
 };
