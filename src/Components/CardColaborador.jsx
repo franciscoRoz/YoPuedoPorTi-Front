@@ -11,7 +11,7 @@ export const CardColaborador =(props) => {
  console.log(data);
   return (
     <div className="bloque-carrucel">
-        <Tarjetas data={data.data} estado={estado}/>
+        <Tarjetas data={data} estado={estado}/>
         
     </div>
   )
