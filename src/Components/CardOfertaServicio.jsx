@@ -20,7 +20,7 @@ let data=[ {
     "tareas": "garzon",
     "descripcion":"apoyo en matrimonio",
     "salario":"25.000 / Evento",
-    "modalidad":"Presencial/remoto",
+    "modalidad":"Presencial",
     "Lugar":"providencia",
     "dias":3
   },
@@ -28,10 +28,10 @@ let data=[ {
     "id": 3,
     "nombre": "Pedro",
     "apellido": "Martínez",
-    "tareas":  "programador",
-    "descripcion":"desarollo de App movil",
-    "salario":"1.000.000 / Mes",
-    "modalidad":"Presencial/remoto",
+    "tareas":  "lavado de auto",
+    "descripcion":"Lavado de auto a domicilio",
+    "salario":"15.000 / Auto",
+    "modalidad":"Presencial",
     "Lugar":"providencia",
     "dias":1
   }]

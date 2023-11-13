@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const Formulario = () => {
+const Formulario2 = () => {
   const [datos, setDatos] = useState({
     correo: '',
     telefono: '',
@@ -43,7 +43,7 @@ const Formulario = () => {
 
     // Aquí puedes realizar la petición con FormData, por ejemplo, utilizando fetch o Axios.
     // Ejemplo con fetch:
-    fetch('http://34.224.75.245:80/Usuarios/Registrar', {
+    fetch('https://yopuedoporti.dataecom.cl/Usuarios/Registrar', {
       method: 'POST',
       body: formData,
     })
@@ -91,14 +91,14 @@ const Formulario = () => {
       <br />
       <br />
       <label>
-        Imagen 1
+        Carnet por el frente
         <br />
         <input type="file" name="imagen1" accept="image/*" onChange={handleImagen1} />
       </label>
       <br />
       <br />
       <label>
-        Imagen 2
+        Carnet por atras
         <br />
         <input type="file" name="imagen2" accept="image/*" onChange={handleImagen2} />
       </label>
@@ -110,4 +110,4 @@ const Formulario = () => {
   );
 };
 
-export default Formulario;
+export default Formulario2;
