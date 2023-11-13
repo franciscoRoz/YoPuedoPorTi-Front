@@ -20,7 +20,7 @@ export const useFetchColaboradores = ( Servicio ) => {
                 });
             })
 
-    }, [])
+    }, [Servicio])
 
 
     
