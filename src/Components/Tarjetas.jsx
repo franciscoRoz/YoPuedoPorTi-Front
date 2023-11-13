@@ -3,7 +3,7 @@
 
 export const Tarjetas = (props) => {
     let {data,estado}=props
-    console.log(data);
+    console.log(data.Colaboradore);
   return (
     <>
     {estado?null:
