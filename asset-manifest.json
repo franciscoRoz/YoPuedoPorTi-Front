@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/YoPuedoPorTi-Front/static/css/main.c2c20cd3.css",
-    "main.js": "/YoPuedoPorTi-Front/static/js/main.e85c2056.js",
+    "main.js": "/YoPuedoPorTi-Front/static/js/main.91ece669.js",
     "static/js/787.0178cd70.chunk.js": "/YoPuedoPorTi-Front/static/js/787.0178cd70.chunk.js",
     "index.html": "/YoPuedoPorTi-Front/index.html",
     "main.c2c20cd3.css.map": "/YoPuedoPorTi-Front/static/css/main.c2c20cd3.css.map",
-    "main.e85c2056.js.map": "/YoPuedoPorTi-Front/static/js/main.e85c2056.js.map",
+    "main.91ece669.js.map": "/YoPuedoPorTi-Front/static/js/main.91ece669.js.map",
     "787.0178cd70.chunk.js.map": "/YoPuedoPorTi-Front/static/js/787.0178cd70.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c2c20cd3.css",
-    "static/js/main.e85c2056.js"
+    "static/js/main.91ece669.js"
   ]
 }
