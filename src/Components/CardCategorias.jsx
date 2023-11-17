@@ -1,4 +1,5 @@
 /* eslint-disable react/jsx-key */
+import { Link } from "react-router-dom"
 import "../CSS/CardCategorias.css"
 export const CardCategorias = () => {
 
@@ -25,7 +26,7 @@ export const CardCategorias = () => {
            <img src={item.logo} alt="LogoServicio"  width={"50px"} height={"50px"}/>
            <div className="elemento-categoria">
              <span>{item.Categoria}</span>
-             <a href={`/ListaColaboradores/${item.Categoria}`}>Explorar</a>
+             <Link to={`/ListaColaboradores/${item.Categoria}`}>Explorar</Link>
            </div>
          </div>
       ))}
