@@ -4,19 +4,20 @@
     align-items: center;
     height: 100px;
     background-color: #01b0d8;
+    
 }
 .elemento-logo-header{
-    width: 17%;
+    width: 25%;
     padding-left: 10px;
 }
 .elemento-navbar{
     width: 75%;
     display: flex;
-    justify-content: start;
+    justify-content: end;
 }
 
 @media (max-width: 450px) {
-    .elemento-navbar{
-        justify-content: end;
-    }
+  .bloque-header{
+    justify-content: space-around;
+  }
 }

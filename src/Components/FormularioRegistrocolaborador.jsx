@@ -50,8 +50,15 @@ const Formulario = () => {
     comuna: "",
     calle: "",
     numero: "",
-    domicilio: ""
+    domicilio: "",
+    comunaslaborales:[],
+    img1:null,
+    img2:null,
+    img3:null
   });
+  const [lascondes, setlascondes] = useState(false)
+  const [vitacura, setvitacura] = useState(false)
+  const [ladehesa, setladehesa] = useState(false)
 
   const comunasDeRegion = comunasChile.find(region => region.nombre === datos.region)?.comunas || [];
   const handleChange = (e) => {
@@ -88,14 +95,45 @@ const Formulario = () => {
       .catch((error) => console.error("Error en la petición:", error));
     window.location.replace(`/RegistrarUsuario/RegistroExitoso`);
   };
+  const handleImagen1 = (e) => {
+    setDatos({
+      ...datos,
+      img1: e.target.files[0],
+    });
+  };
+  const handleImagen2 = (e) => {
+    setDatos({
+      ...datos,
+      img2: e.target.files[0],
+    });
+  };
+  const handleImagen3 = (e) => {
+    setDatos({
+      ...datos,
+      img3: e.target.files[0],
+    });
+  };
 
+  let handlecomunaslaborales=(e)=>{
+    e.preventDefault();
+    console.log(datos.comunaslaborales.includes("Las Condes")?"item-seleccion":"item-seleccionado-selected");
+   if(datos.comunaslaborales.includes(e.target.name)){
+    datos.comunaslaborales = datos.comunaslaborales.filter(elemento => elemento !== e.target.name);
+   }else{
+    datos.comunaslaborales.push(e.target.name)
+   } 
+   e.target.name==="Las Condes"?setlascondes(!lascondes):setlascondes(lascondes);
+   e.target.name==="La Dehesa"?setladehesa(!ladehesa):setladehesa(ladehesa);
+   e.target.name==="Vitacura"?setvitacura(!vitacura):setvitacura(vitacura);
+
+  }
 
   return (
     <form onSubmit={handleSubmit} className="bloque-formularioUsuario">
       <div className="Row">
         <div className="bloque-subseccion">
           <div className="headerseccion">
-            <span>Datos Personales</span>
+            <strong>DATOS PERSONALES</strong>
           </div>
 
       
@@ -164,7 +202,7 @@ const Formulario = () => {
 
         <div className="bloque-subseccion">
           <div className="headerseccion">
-            <span>Direccion</span>
+            <strong>DIRECCION</strong>
           </div>
      
      
@@ -237,16 +275,81 @@ const Formulario = () => {
           </div>
         </div>
       </div>
+      <div className="Row">
+        <div className="bloque-subseccion">
+          <div className="headerseccion">
+            <strong>VALIDACION DE  IDENTIDAD</strong>
+          </div>
+          <div className="validentidad">
+            <br />
+            
+            <br />
+            <label>
+              Foto de tu rostro
+              <br />
+              <input
+                type="file" name="img1" accept="image/*"
+               
+                onChange={handleImagen1}
+              />
+            </label>
+            <br />
+            <br />
 
+            <label>
+              Foto de tu Cedula de Identidad (Frente)
+              <br />
+              <input
+                type="file" name="img2" accept="image/*"
+             
+                onChange={handleImagen2}
+              />
+            </label>
+            <br />
+            <br />
+            <label>
+            Foto de tu Cedula de Identidad (Atras)
+              <br />
+              <input
+                type="file" name="img3" accept="image/*"
+     
+                onChange={handleImagen3}
+              />
+            </label>
+          </div>
+        </div>
+
+       <div className="bloque-submit">
+       <div className="bloque-subseccion">
+          <div className="headerseccion">
+            <strong>DONDE QUIERES TRABAJAR</strong>
+          </div>
+     
+          <div className="Direccion">
+          <label>
+            Selecciona las comunas disponibles para trabajar (puede ser mas de una)
+            </label>
+            <div className="bloque-comunas">
+                  <button className={ datos.comunaslaborales.includes("Las Condes")?"item-seleccionado-selected":"item-seleccion"} onClick={handlecomunaslaborales} name='Las Condes'>+ Las Condes</button>
+                  <button className={ datos.comunaslaborales.includes("Vitacura")?"item-seleccionado-selected":"item-seleccion"} onClick={handlecomunaslaborales} name='Vitacura' >+ Vitacura</button>
+                  <button className={ datos.comunaslaborales.includes("La Dehesa")?"item-seleccionado-selected":"item-seleccion"} onClick={handlecomunaslaborales} name='La Dehesa'>+ Las Dehesa</button>
+            </div>
+          </div>
+                  
+        </div>
+        <br /><br /><br />
+        <button type="submit" className="elemento-enviar">
+        Enviar
+      </button>
+
+       </div>
+      </div>
 
 
 
 
       <br />
 
-      <button type="submit" className="elemento-enviar">
-        Enviar
-      </button>
     </form>
   );
 };

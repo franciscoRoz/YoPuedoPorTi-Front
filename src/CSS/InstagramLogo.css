@@ -9,3 +9,8 @@
   width: 60px; /* Ajusta según el tamaño deseado */
   height: auto; /* Mantiene la proporción del logo */
 }
+@media (max-width: 450px) {
+  .logo-instagram{
+    bottom: 50px;
+  }
+}

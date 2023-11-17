@@ -75,3 +75,16 @@ flex-direction: column;
 justify-content: center;
 align-items: center;}
  
+@media (max-width: 450px) {
+   .img-busqueda{
+      display: none;
+   }
+   .modify-usuario{
+      width: 40%;
+      font-size: 12px;
+   }
+   .modify-colaborador{
+      width: 40%;
+      font-size: 12px;
+   }
+}

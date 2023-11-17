@@ -22,6 +22,6 @@
 }
 .bloque-carrucel-categorias{
     display: grid;
-   grid-template-columns: repeat(auto-fit,minmax(220px,220px));
+   grid-template-columns: repeat(auto-fit,minmax(150px,220px));
    gap: 1rem;
 }

@@ -13,7 +13,7 @@ export const HomePage = () => {
         <InstagramLogo/>
         <div className="bloque-FormBusqueda">
             <FormBusquedaServicio/>
-            <img src="http://res.cloudinary.com/ddlvvek8u/image/upload/v1699898074/dog-walker-with-dogs-at-the-park-free-vector-removebg-preview.png.png" alt="Imagen" style={{marginLeft:"200px"}} />
+            <img  className="img-busqueda" src="http://res.cloudinary.com/ddlvvek8u/image/upload/v1699898074/dog-walker-with-dogs-at-the-park-free-vector-removebg-preview.png.png" alt="Imagen" style={{marginLeft:"200px"}} />
         </div>
         <div className="bloque-servicios-disponibles">
           <h2>Descubre los trabajos disponibles</h2>
@@ -26,7 +26,7 @@ export const HomePage = () => {
             <Link to='/RegistrarUsuario' className="modify-usuario">Registrarme como Usuario</Link>
           </div>
           <div className="elemento-colaborador">
-          <Link className="modify-colaborador">Registrarme como Colaborador</Link>
+          <Link to='/RegistrarColaborador' className="modify-colaborador">Registrarme como Colaborador</Link>
           </div>
         </div>
         <div className="bloque-categorias-populares">

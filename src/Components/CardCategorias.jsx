@@ -25,7 +25,7 @@ export const CardCategorias = () => {
            <img src={item.logo} alt="LogoServicio"  width={"50px"} height={"50px"}/>
            <div className="elemento-categoria">
              <span>{item.Categoria}</span>
-             <a href="">Explorar</a>
+             <a href={`/ListaColaboradores/${item.Categoria}`}>Explorar</a>
            </div>
          </div>
       ))}
