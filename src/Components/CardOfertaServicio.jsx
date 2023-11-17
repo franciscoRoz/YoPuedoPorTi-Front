@@ -10,30 +10,46 @@ let data=[ {
     "descripcion":"ayuda en preparacion para la prueba paes",
     "salario":"7.000 / Hora",
     "modalidad":"Presencial/remoto",
-    "Lugar":"providencia",
-    "dias":6
+    "Lugar":"Vitacura",
+    "dias":6,
+    "img":"http://res.cloudinary.com/ddlvvek8u/image/upload/v1700187499/WhatsApp%20Image%202023-11-16%20at%203.16.00%20PM%20%281%29.jpeg.jpg"
   },
   {
     "id": 2,
-    "nombre": "María",
+    "nombre": "Samanta",
+    "apellido": "Rivera",
+    "tareas":  "Fotografo",
+    "descripcion":"Fotografo para matrimonio",
+    "salario":"300.000 / Evento",
+    "modalidad":"Presencial",
+    "Lugar":"Las Condes",
+    "dias":15,
+    "img":"http://res.cloudinary.com/ddlvvek8u/image/upload/v1700188048/WhatsApp%20Image%202023-11-16%20at%203.16.00%20PM.jpeg.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Pedro",
     "apellido": "Gómez",
     "tareas": "garzon",
     "descripcion":"apoyo en matrimonio",
     "salario":"25.000 / Evento",
     "modalidad":"Presencial",
-    "Lugar":"providencia",
-    "dias":3
+    "Lugar":"La Dehesa",
+    "dias":3,
+    "img":"http://res.cloudinary.com/ddlvvek8u/image/upload/v1700187065/WhatsApp%20Image%202023-11-16%20at%203.15.58%20PM%20%281%29.jpeg.jpg"
+  
   },
   {
-    "id": 3,
-    "nombre": "Pedro",
+    "id": 4,
+    "nombre": "Maria",
     "apellido": "Martínez",
     "tareas":  "lavado de auto",
     "descripcion":"Lavado de auto a domicilio",
     "salario":"15.000 / Auto",
     "modalidad":"Presencial",
-    "Lugar":"providencia",
-    "dias":1
+    "Lugar":"Las Condes",
+    "dias":1,
+    "img":"http://res.cloudinary.com/ddlvvek8u/image/upload/v1700187886/WhatsApp%20Image%202023-11-16%20at%203.15.59%20PM%20%281%29.jpeg.jpg"
   }]
 
 
@@ -43,7 +59,7 @@ let data=[ {
         <div className="bloque-carrucel-ofertas">
        {data.map((item)=>(<div className="bloque_tarjeta">
             <div className="bloque-seccion-perfil">
-                <img src="http://res.cloudinary.com/ddlvvek8u/image/upload/v1699877627/icons8-usuario-masculino-en-c%C3%83%C2%ADrculo-100.png.png" alt="logoIcon" width={"50px"} height={"auto"} />
+                <img src={item.img} alt="" width={"50px"} style={{borderRadius:"25px"}} />
                 
                 <img src="http://res.cloudinary.com/ddlvvek8u/image/upload/v1699878111/icons8-me-gusta-50.png.png" alt="corazonlike" width={"25px"} height={"25px"}/>
             </div>

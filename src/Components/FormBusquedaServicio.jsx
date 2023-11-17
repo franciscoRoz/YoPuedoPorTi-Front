@@ -11,7 +11,7 @@ export const FormBusquedaServicio = () => {
 
   return (
     <div className="bloque_formulario_servicio">
-        <h7>Buscar Servicio</h7>
+        <strong>Buscar Servicio</strong>
         <div className="elemento_marcador"></div>
         <br/>
         <p>Que servicio Buscar?</p>

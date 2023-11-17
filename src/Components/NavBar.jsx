@@ -74,7 +74,7 @@ export const NavBar = () => {
            
             <li>
                     <span onClick={toggleSubMenu1} className={selectedOption === 'Opción 1' ? 'selected' : ''}>
-                    <li><Link to="/Home">Home</Link></li>
+                    <li><Link to="/Home">Inicio</Link></li>
                     </span>
                    
                         

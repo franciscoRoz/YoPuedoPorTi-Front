@@ -8,7 +8,7 @@ import { useFetchColaboradores } from "../Hooks/useFetchColaboradores"
 
 export const ListadeColaboradores = () => {
   const { servicio } = useParams();
-  console.log();
+  console.log(servicio);
   let {data,loading}=useFetchColaboradores(servicio)
   console.log(data);
   return (
